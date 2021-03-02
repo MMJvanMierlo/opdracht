@@ -1,0 +1,122 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+.divA :first-child {
+    font-size: 0.8em;
+}
+.divA :last-child {
+    font-size: 0.6em;
+    color: lightgray;
+    
+}
+span{
+    font-weight: bold;
+}
+.main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container {
+    height: 40%;
+    width: 40%;
+    border: solid grey 1px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container-2 {
+    height: 40%;
+    width: 40%;
+    border: solid grey 1px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+.parent {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+}
+.div1 {
+    grid-area: a;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        "c c c c d";
+}
+.div2 {
+    grid-area: b;
+    margin: 20px;
+    font-size: 1.5em;
+    color: rgb(68, 68, 68);
+}
+.div3 {
+    grid-area: c;
+    border: solid grey 1px;
+    border-radius: 0px 0px 5px 5px;
+    border-left: 0;
+    border-bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        "e f";
+    
+}
+.divA {
+    grid-area: c;
+    margin: 20px;
+    font-size: 2em;
+}
+.divB {
+    grid-area: d;
+    background-image: url(https://st2.depositphotos.com/2101611/8308/v/600/depositphotos_83084390-stock-illustration-businessman-icon-can-be-used.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+}
+.divC {
+    border: solid rgb(28, 194, 28) 2px;
+    border-right: 0;
+    grid-area: e;
+    margin: 20px;
+    margin-right: 0;
+    color: rgb(28, 194, 28);
+    border-radius: 5px 0px 0px 5px;
+}
+.divD {
+    border: solid red 2px;
+    grid-area: f;
+    margin: 20px;
+    margin-left: 0;
+    color: red;
+    border-radius: 0px 5px 5px 0px;
+}
+.divC,
+.divD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
